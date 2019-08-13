@@ -125,3 +125,6 @@ dmypy.json
 
 # Secret
 git_secret.py
+
+# vscode
+.vscode/
