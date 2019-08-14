@@ -25,7 +25,7 @@ def display(restored_model, image_path, label):
 
 model_predict = model.Get_model()
 
-if os.path.exists(glo_var.checkpoint_dir):
+if os.path.exists(os.path.join(glo_var.checkpoint_dir, "checkpoint")):
     model_predict.load_weights(glo_var.checkpoint_path)
 
     for _, _, filenames in os.walk(glo_var.TEST_DATA_DIR):

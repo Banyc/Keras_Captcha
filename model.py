@@ -15,11 +15,14 @@ def Get_model():
     tensor = tf.keras.layers.Conv2D(256, (3, 3), activation="relu", padding="same")(tensor)
     tensor = tf.keras.layers.Conv2D(256, (1, 1), activation="relu", padding="same")(tensor)
     tensor = tf.keras.layers.MaxPooling2D(pool_size=[2, 2], strides=2, padding="same")(tensor)
+    tensor = tf.keras.layers.Conv2D(256, (3, 3), activation="relu", padding="same")(tensor)
+    tensor = tf.keras.layers.Conv2D(256, (3, 3), activation="relu", padding="same")(tensor)
+    tensor = tf.keras.layers.Conv2D(256, (1, 1), activation="relu", padding="same")(tensor)
+    tensor = tf.keras.layers.MaxPooling2D(pool_size=[2, 2], strides=2, padding="same")(tensor)
 
     tensor = tf.keras.layers.Flatten()(tensor)
 
     branches = []
-
     for i in range(glo_var.num_classes):
         branch = tf.keras.layers.Dense(64, activation="relu")(tensor)
         branch = tf.keras.layers.Dropout(0.25)(branch)
