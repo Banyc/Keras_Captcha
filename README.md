@@ -11,11 +11,11 @@
 
 ## Files intro
 
-`glo_var` - global variables and constants
-`img_gen` - preprocess image and label
-`model` - definition of the CNN
-`train` - runnable. Training model
-`predict` - runnable. Predict and test the saved model instance
+- `glo_var` - global variables and constants
+- `img_gen` - preprocess image and label
+- `model` - definition of the CNN
+- `train` - runnable. Training model
+- `predict` - runnable. Predict and test the saved model instance
 
 ## Techniques & Trouble-shooting
 
