@@ -20,6 +20,8 @@ cp_callbacks = []
 cp_callbacks.append(tf.keras.callbacks.ModelCheckpoint(glo_var.checkpoint_path,
                                                  save_weights_only=True,
                                                  verbose=1))
+# Auto halting
+cp_callbacks.append(tf.keras.callbacks.EarlyStopping())
 
 # get data
 x_train, y_train, x_val, y_val = img_gen.get_data()

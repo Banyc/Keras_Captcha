@@ -1,15 +1,19 @@
 # Captcha
 
+To recognize the text of the given captcha using CNN structure
+
 ## Tutorial
 
 - <https://juejin.im/post/5c073bde51882546150ac75a>
 - <https://www.jianshu.com/p/f2184bc6c1f2>
 
-## Data
+## Data for training
 
 - <https://pan.baidu.com/s/1N7bDHxIM38Vu7x9Z2Qr0og>
 
-## Files intro
+## Introduction
+
+### Files
 
 - `glo_var` - global variables and constants
 - `img_gen` - preprocess image and label
